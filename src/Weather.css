@@ -1,0 +1,13 @@
+.Weather {
+  text-align: left;
+  border: 1px solid;
+}
+.Weather li {
+  list-style: none;
+}
+.Weather ul {
+  padding: 0;
+}
+.Weather input {
+  width: 100%;
+}
