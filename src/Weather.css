@@ -21,6 +21,10 @@
   font-weight: 600;
   margin: 15px 0 15px 0;
 }
+.Weather h2 small {
+  font-size: 13px;
+  opacity: 0.8;
+}
 .Weather li {
   list-style: none;
 }
