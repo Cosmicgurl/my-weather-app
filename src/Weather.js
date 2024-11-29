@@ -9,23 +9,25 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
   function updateApp(response) {
+    console.log(response.data);
     return (
       setWeatherData({
         ready: true,
-        temperature: response.data.daily[0].temperature.day,
-        wind: response.data.daily[0].wind.speed,
+        coordinates: response.data.coordinates,
+        temperature: response.data.temperature.current,
+        wind: response.data.wind.speed,
         city: response.data.city,
         country: response.data.country,
-        date: new Date(response.data.daily[0].time * 1000),
-        description: response.data.daily[0].condition.description,
-        iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.daily[0].condition.icon}.png`,
+        date: new Date(response.data.time * 1000),
+        description: response.data.condition.description,
+        iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
       }),
-      console.log(response.data)
+      console.log(response.data.temperature)
     );
   }
   function Search() {
     const apiKey = `97bffc05t90b9a4d323obc7a7e7acf4e`;
-    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query="${city}&key=${apiKey}&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query="${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(updateApp);
   }
   function handleSubmit(event) {
@@ -59,7 +61,7 @@ export default function Weather(props) {
           </div>
         </form>
         <Weatherinfo data={weatherData} />
-        <WeatherForecast data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
