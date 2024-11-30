@@ -44,7 +44,7 @@ export default function Weather(props) {
           <div className="row">
             <div className="col-9">
               <input
-                type="Search"
+                type="search"
                 placeholder="Enter a city..."
                 autoFocus="on"
                 className="FormContent"
@@ -55,7 +55,7 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary w-100"
+                className="btn btn-outline-light w-100 button"
               />
             </div>
           </div>

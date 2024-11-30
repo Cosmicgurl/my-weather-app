@@ -1,9 +1,12 @@
 .App {
   margin: 30px auto;
-  color: rgb(43, 43, 43);
+  color: white;
 }
 .App footer {
   font-size: 13px;
   text-align: center;
   margin-top: 5px;
+}
+.App a {
+  color: rgb(192, 188, 255);
 }

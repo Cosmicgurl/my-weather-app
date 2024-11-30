@@ -1,20 +1,38 @@
 .Weather {
   text-align: left;
   border: 1px solid;
-  border-radius: 4px;
-  padding: 20px 20px 0 20px;
+  border-radius: 8px;
+  padding: 40px 20px 40px 20px;
   max-width: 500px;
   margin: 0 auto;
+
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .Weather form {
   padding: 0;
   margin-bottom: 10px;
+  font-family: monospace;
 }
 .Weather .FormContent {
   width: 100%;
   padding: 6px;
   border-radius: 8px;
-  border-color: rgb(163, 163, 163);
+  border: none;
+  font-size: 17px;
+  color: white;
+}
+input[type="search"] {
+  background: transparent;
+}
+input[type="search"]::placeholder {
+  color: white;
+  opacity: 0.9;
+}
+.button:hover {
+  background-color: rgb(192, 188, 255) !important;
+  border: none;
 }
 .Weather h2 {
   font-size: 40px;
