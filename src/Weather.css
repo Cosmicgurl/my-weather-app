@@ -70,3 +70,36 @@ input[type="search"]::placeholder {
   position: relative;
   bottom: 25px;
 }
+@media (max-width: 900px) {
+  .Weather {
+    padding: 20px 10px;
+  }
+  .Weather h2 {
+    font-size: 30px;
+  }
+  .Weather .FormContent {
+    font-size: 14px;
+  }
+  .Weather .button {
+    font-size: 12px;
+    padding: 3px;
+  }
+  .Weather .Temperature {
+    margin-left: 10px;
+    font-size: 30px;
+  }
+  .Weather .Icon {
+    height: 56px;
+    position: relative;
+    bottom: 10px;
+  }
+  .Weather li {
+    font-size: 14px;
+  }
+  .Weather strong {
+    font-size: 14px;
+    position: relative;
+    bottom: 17px;
+    margin-left: 10px;
+  }
+}

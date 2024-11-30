@@ -12,3 +12,19 @@
 img.forecastIcon {
   width: 55px;
 }
+@media (max-width: 900px) {
+  .WeatherForecast {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  div .col {
+    padding: 0 4px 0 4px;
+  }
+  img.forecastIcon {
+    width: 35px;
+  }
+  .WeatherForecast-temp-min {
+    opacity: 0.8;
+    margin-left: 0;
+  }
+}
