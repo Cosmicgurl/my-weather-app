@@ -5,7 +5,8 @@
   padding: 40px 20px 40px 20px;
   max-width: 500px;
   margin: 0 auto;
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("https://images.pexels.com/photos/1906658/pexels-photo-1906658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
