@@ -27,6 +27,9 @@
 input[type="search"] {
   background: transparent;
 }
+input[type="search"]:focus {
+  border: none;
+}
 input[type="search"]::placeholder {
   color: white;
   opacity: 0.9;
