@@ -10,3 +10,8 @@
 .App a {
   color: rgb(192, 188, 255);
 }
+@media (max-width: 600px) {
+  .App footer {
+    font-size: 10px;
+  }
+}

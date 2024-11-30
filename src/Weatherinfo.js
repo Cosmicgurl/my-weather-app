@@ -16,7 +16,7 @@ export default function Weatherinfo(props) {
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
       <div className="row">
-        <div className="col-6 lh-1">
+        <div className="current col-6 lh-1">
           <img
             src={props.data.iconUrl}
             alt="Mostly cloudy"
