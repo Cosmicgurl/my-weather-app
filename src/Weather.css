@@ -5,7 +5,7 @@
   padding: 40px 20px 40px 20px;
   max-width: 500px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("https://images.pexels.com/photos/1906658/pexels-photo-1906658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   background-position: center;
   background-attachment: fixed;
@@ -28,8 +28,10 @@ input[type="search"] {
   background: transparent;
 }
 input[type="search"]:focus {
-  border: none;
   outline: none;
+}
+input[type="search"]:hover {
+  border: white;
 }
 input[type="search"]::placeholder {
   color: white;
